@@ -103,6 +103,15 @@ The easiest way to install Xcode is via the [Mac App Store](https://itunes.apple
 
 Download and install [Android Studio](https://developer.android.com/studio/install.html).
 
+If you get an error like "SDK location not found", open the Android Studio and navigate to Configure -> SDK Manager.  Add a path to store the SDKs (will default to /Users/YOURNAME/Library/Android/sdk.  At the time of this edit, install Android 6.0 (Marshmallow).  If it still doesn't work, edit your ~/.bashrc or ~/.zshrc and add the following: 
+```
+export ANDROID_HOME=/Users/YOURNAME/Library/Android
+```
+Then run:
+```
+source ~/.bashrc
+```
+
 If you plan to make changes in Java code, we recommend [Gradle Daemon](https://docs.gradle.org/2.9/userguide/gradle_daemon.html) which speeds up the build.
 
 
